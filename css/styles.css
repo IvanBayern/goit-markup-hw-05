@@ -166,7 +166,8 @@ ul
     content: "";
     position: absolute;
     left: 0;
-    bottom: -100%;
+    bottom: 0;
+    transform: translateY(29px);
     border-radius: 2px;
 
     display: block;
@@ -188,7 +189,7 @@ ul
     transition-property: color;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        transition-delay: 0;
+
    }
 .nav-link:hover,
 .nav-link:focus, 
@@ -218,7 +219,7 @@ ul
     transition-property: color;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        transition-delay: 0;
+ 
    }
 .email-icon {
     fill: currentColor;
@@ -377,10 +378,9 @@ ul
     cursor: pointer;
     border: none;
 
-    transition-property: background ;
+    transition-property: background;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        transition-delay: 0;
 
 }
 .hero-btn:hover{
@@ -444,7 +444,6 @@ border-radius: 0px 0px 4px 4px;
     transition-property: background-color, color ;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        transition-delay: 0;
     
 }
 
@@ -458,7 +457,6 @@ border-radius: 0px 0px 4px 4px;
 transition-property: fill ;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-delay: 0;
 
 }
 .team-social-icon:hover,
@@ -482,7 +480,6 @@ transition-property: fill ;
     transition-property: border, color;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        transition-delay: 0;
 
 }
 .client-item:hover,
@@ -536,10 +533,9 @@ transition-property: fill ;
     padding: 6px 22px; 
     border: none;
     
-    transition-property: background-color, color;
+    transition-property: background-color,color,box-shadow;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        transition-delay: 0;
       }
 .btn-item.active-btn{
     color: var(--white-txt-cl);
@@ -575,13 +571,14 @@ transition-property: fill ;
     transition-property: box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-delay: 0;
-    
-
+   
+}
+.works-item-card:hover{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .works-item-card:hover .works-card-overlay {
     transform: translateY(0);
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    
 }
 .works-item-card:nth-child(3n) {
     margin-right: 0;
@@ -604,15 +601,22 @@ transition-property: fill ;
     background: rgba(33, 150, 243, 0.9);
     color: var(--white-txt-cl);
     padding: 63px 24px;
-    transform: translateY(100%);
+    transform: translateY(101%);
 
     transition-property: transform;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        transition-delay: 0;
 
-
-
+}
+.works-text-overlay{
+    font-family: var(--main-font);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.56;
+        letter-spacing: 0.03em;
+    
+        color: var(--white-txt-cl);
 }
 
 .footer 
@@ -646,7 +650,6 @@ address
     transition-property: color;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        transition-delay: 0;
     }
 .post,
 .phone
@@ -674,7 +677,6 @@ address
     transition-property: background-color;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        transition-delay: 0;
     }
 .footer-social-link:hover,
 .footer-social-link:focus {
@@ -697,7 +699,6 @@ address
     transition-property: fill ;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        transition-delay: 0;
 }
 .footer-social-icon:hover{
     fill: currentColor;
